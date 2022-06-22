@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.header-img{
+  border-radius: 50%;
+
+}
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.col-3 {
+  width: 25%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+.col-3-1 {
+  width: 25%;
+}
+
+.col-9 {
+  width: 75%;
+
+}
+.col-6 {
+  width: 46.666%;
+  padding: 0 15px;
+}
+.col-8 {
+  width: 75%;
+  padding: 0 15px;
+}
+.col-4 {
+  width: 33.333%;
+  padding: 0 15px;
+}
+.col-2 {
+  width: 20%;
+  padding: 0 15px;
+}
+.project-btn {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+
+
+.title{
+  color: #351859;
+  font-size: 28px;
+}
+
+.title-list{
+  color: #351859;
+  border-bottom: 3px solid #C406D2;
+}
+
+.btn{
+  background: #C406D2;
+  color: white;
+  padding: 5px 10px;
+}
+.links {
+  border-bottom: 2px solid gray;
+}
+.h-screen{
+  height: 100vh;
+}
+/*@keyframes rotate {*/
+/*  from {*/
+/*    transform: rotate(0deg);*/
+/*  }*/
+/*  to {*/
+/*    transform: rotate(360deg);*/
+/*  }*/
+/*}*/
+
+
+/*@-webkit-keyframes rotate {*/
+/*  from {*/
+/*    transform: rotate(0deg);*/
+/*  }*/
+/*  to {*/
+/*    transform: rotate(360deg);*/
+/*  }*/
+
+/*}*/
+
+.load {
+  width: 30px;
+  height: 30px;
+  margin-left: 30px;
+  /*margin-right: 10px;*/
+  border:  solid 4px yellowgreen;
+  border-radius: 75%;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  -webkit-transition: all 0.5s ease-in;
+  -webkit-animation-name:             rotate;
+  -webkit-animation-duration:         1.0s;
+  -webkit-animation-iteration-count:  infinite;
+  -webkit-animation-timing-function: linear;
+  transition: all 0.5s ease-in;
+  animation-name:             rotate;
+  animation-duration:         1.0s;
+  animation-iteration-count:  infinite;
+  animation-timing-function: linear;
+}
+.spisok {
+  position: relative;
+  transition: 0.6s;
+  color: gray;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.spisok:hover {
+  color: black;
+}
+.spisok:hover:before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  background-color: blueviolet;
+  transition: 0.5s;
+}
+.navbar .active {
+  position: relative;
+  background-color: #351859;
+
+}
+.navbar .active:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top:0;
+  width: 5px;
+  height: 100%;
+  background-color: purple;
+}
+.checkbox-custom {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-custom,
+.checkbox-custom-label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.checkbox-custom + .checkbox-custom-label:before {
+  content: "";
+  background: #fff;
+  border-radius: 5px;
+  border: 2px solid gray;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.checkbox-custom:checked + .checkbox-custom-label:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 15px;
+  border: solid purple;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  border-radius: 3px;
+  margin: 0 15px 5px 5px;
+}
