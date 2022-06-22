@@ -20,7 +20,7 @@ const Project = () => {
                 setProject(res.data)
                 setIsLoading(false)
             })
-    },[project])
+    },[setIsLoading,setProject])
 
     if(isLoading) {
         return <Spinner/>

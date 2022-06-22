@@ -16,7 +16,7 @@ const App = () => {
      if(location.pathname === "/") {
          navigate("/login")
      }
- },[location.pathname])
+ },[location.pathname,navigate])
     return (
         <Routes>
             <Route path="/login" element={<Login />} />

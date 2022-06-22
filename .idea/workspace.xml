@@ -5,57 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e151495-3f4b-4a66-b031-1bbecb431a51" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/medical-app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/96452360.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/avatar.avif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/nurs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/user1.avif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/user2.avif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/images/user3.avif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Layout/Layout.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Layout/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SideBar/SideBar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/SideBar/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Spinner/Spinner.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Spinner/Spinner.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Spinner/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/AddProject/AddProject.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/AddProject/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Calendar/Calendar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Calendar/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Capability/Capability.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Capability/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Login/Login.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Login/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Project/Project.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Project/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Tasks/Tasks.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/Tasks/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Spinner/Spinner.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Spinner/Spinner.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AddProject/AddProject.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AddProject/AddProject.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Project/Project.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Project/Project.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +77,7 @@
       <updated>1655316587332</updated>
       <workItem from="1655316593815" duration="32938000" />
       <workItem from="1655492338266" duration="16743000" />
-      <workItem from="1655680625895" duration="49860000" />
+      <workItem from="1655680625895" duration="57596000" />
     </task>
     <servers />
   </component>
@@ -146,7 +102,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/pages/AddProject/AddProject.jsx</url>
-          <line>47</line>
+          <line>62</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
