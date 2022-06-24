@@ -19,7 +19,9 @@ const Login = () => {
         e.preventDefault()
         if(login === "admin" && password === "admin"){
             navigate(`/projects`)
-        } else {
+        } else if(login === "" && password === ""){
+            alert("введите данные")
+        }else {
             toast.success("Вы ввели неверные данные");
             setPassword("") && setLogin("")
         }
