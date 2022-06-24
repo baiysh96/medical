@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 import logo from "../../assets/images/logo.png"
 const SideBar = () => {
     return (
-        <div className="min-h-screen columns-xs bg-purple-800">
+        <div className="min-h-screen w-1/4 bg-purple-800">
             <aside className="py-4">
                 <img
                     className="h-24 block m-auto mb-8"

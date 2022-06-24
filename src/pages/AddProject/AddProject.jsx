@@ -2,6 +2,8 @@ import React from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const AddProject = ({project,setProject,setModalActive}) => {
     const formik = useFormik({
@@ -47,14 +49,17 @@ const AddProject = ({project,setProject,setModalActive}) => {
                director:"",
                admin:""
            })
+           toast.dark("Проект успешно добавлена");
         },
     });
 
 
     return (
         <div>
-            <div className="bg-black text-white fixed top-0 right-0  w-full h-screen overflow-y-scroll " >
-            <div className=" bg-black sm:max-w-md p-5 mx-auto overflow-y-scroll">
+            <div onClick={() => {
+                setModalActive(false)
+            }} className="bg-black text-white fixed top-0 right-0  w-full h-screen overflow-y-scroll " >
+            <div onClick={(e) => e.stopPropagation()} className=" bg-black sm:max-w-md p-5 mx-auto overflow-y-scroll">
                 <div onClick={() => {
                     setModalActive(false)
                 } }
@@ -153,6 +158,17 @@ const AddProject = ({project,setProject,setModalActive}) => {
             </form>
             </div>
             </div>
+            <ToastContainer
+                position="top-center"
+                autoClose={9000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
         </div>
     );
 };

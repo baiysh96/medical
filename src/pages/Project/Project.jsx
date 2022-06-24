@@ -7,7 +7,7 @@ import user1 from "../../assets/images/user1.avif"
 import user2 from "../../assets/images/user2.avif"
 import user3 from "../../assets/images/user3.avif"
 import Spinner from "../../components/Spinner";
-import {Link} from "react-router-dom";
+import {Link,NavLink} from "react-router-dom";
 import Layout from "../../components/Layout";
 const Project = () => {
     const [project,setProject] = useState([])
@@ -57,13 +57,13 @@ const Project = () => {
                     </button>
                 </div>
             </div>
-            <div className="flex justify-end  mb-4">
-                <button onClick={() => setPagination(true)} className="mr-3 cursor-pointer hover:text-purple-800">
-                    <i className='bx bx-grid-alt text-gray-400 text-3xl hover:text-purple-800'></i></button>
-                <button onClick={() => setPagination(false)} className="cursor-pointer hover:text-purple-800"><i
-                    className='bx bx-menu text-gray-400 text-4xl hover:text-purple-800'></i></button>
+            <div className="flex justify-end items-center pagination mb-4">
+                <NavLink to="/projects" onClick={() => setPagination(true)} className="mr-3 cursor-pointer hover:text-purple-800">
+                    <i className='bx bx-grid-alt text-gray-400 text-3xl hover:text-purple-800'></i></NavLink>
+                <NavLink to="/projects" onClick={() => setPagination(false)} className="cursor-pointer hover:text-purple-800"><i
+                    className='bx bx-menu text-gray-400 text-4xl hover:text-purple-800'></i></NavLink>
             </div>
-            <div className={pagination?"ml-7 row pl-3 pr-3":null}>
+            <div className={pagination?"ml-7 row pl-3 pr-3 ":null}>
                 {
                     project.map((project) => (
                         <div key={project.id} className="col-3 mb-3">
@@ -95,8 +95,10 @@ const Project = () => {
                                     alt=" 720x400"
                                 />
                                 <ul className="mb-2 ml-2 text-gray-500">
-                                    <li><h2 className="uppercase text-2xl  mb-2 text-black ">{project.title}</h2></li>
-                                    <li className=""><i className='bx bxs-calendar text-lg mr-2'></i>{`${project.date1}  ${project.date2} .гг`}</li>
+                                    <li><h2 className="uppercase text-1xl  mb-2 text-black ">{project.title}</h2></li>
+                                    <li className=""><i className='bx bxs-calendar text-lg mr-2'></i>
+                                     {`${project.date1.replace(/-/g, ".")} 
+                                  -  ${project.date2?.replace(/-/g, ".")} .гг`}</li>
                                     <li className="font-size"><i className='bx bxs-user-rectangle text-xl mr-2'></i>{project.director}</li>
                                     <li><i className='bx bx-ruble text-xl mr-2'></i>{project.admin}</li>
                                     <div>
@@ -148,7 +150,7 @@ const Project = () => {
                                         </button>
                                     </div>
                                     <div className=" ml-10 flex justify-end">
-                                        <div className="load"></div>
+                                        <div className={ modalActive? null : "load" }></div>
                                     </div>
                                 </div>
                             </div>

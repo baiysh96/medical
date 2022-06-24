@@ -87,26 +87,25 @@ code {
 .h-screen{
   height: 100vh;
 }
-/*@keyframes rotate {*/
-/*  from {*/
-/*    transform: rotate(0deg);*/
-/*  }*/
-/*  to {*/
-/*    transform: rotate(360deg);*/
-/*  }*/
-/*}*/
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 
-/*@-webkit-keyframes rotate {*/
-/*  from {*/
-/*    transform: rotate(0deg);*/
-/*  }*/
-/*  to {*/
-/*    transform: rotate(360deg);*/
-/*  }*/
+@-webkit-keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 
-/*}*/
-
+}
 .load {
   width: 30px;
   height: 30px;
@@ -176,7 +175,7 @@ code {
 
 .checkbox-custom + .checkbox-custom-label:before {
   content: "";
-  background: #fff;
+  background: white;
   border-radius: 5px;
   border: 2px solid gray;
   display: inline-block;
@@ -186,6 +185,7 @@ code {
   padding: 5px;
   margin-right: 10px;
   text-align: center;
+  color:white;
 }
 
 .checkbox-custom:checked + .checkbox-custom-label:before {
