@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -82,7 +86,7 @@ code {
   padding: 5px 10px;
 }
 .links {
-  border-bottom: 2px solid gray;
+  border-bottom: 1px solid gray;
 }
 .h-screen{
   height: 100vh;
@@ -107,12 +111,12 @@ code {
 
 }
 .load {
-  width: 30px;
-  height: 30px;
-  margin-left: 30px;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
   /*margin-right: 10px;*/
-  border: 4px  solid yellowgreen;
-  border-radius: 75%;
+  border: 6px  solid yellowgreen;
+  border-radius: 76%;
   border-left-color: transparent;
   -webkit-transition: all 0.5s ease-in;
   -webkit-animation-name:             rotate;
@@ -126,25 +130,27 @@ code {
   animation-timing-function: linear;
 }
 .spisok {
+  cursor: pointer;
   position: relative;
   transition: 0.6s;
-  color: gray;
-  font-weight: bold;
+  color: #a9a2a2;
+  font-weight: 550;
   font-size: 16px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .spisok:hover {
-  color: black;
+  color: rgba(0, 0, 0, 0.8);
 }
 .spisok:hover:before {
   content: "";
   width: 100%;
-  height: 3px;
+  height: 2px;
   position: absolute;
-  bottom: -10px;
+  bottom: -8px;
   left: 0;
-  background-color: blueviolet;
-  transition: 0.5s;
+  background-color: #884288;
+  transition: 0.6s;
+
 }
 .navbar .active {
   position: relative;

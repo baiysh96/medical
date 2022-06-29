@@ -3,7 +3,7 @@ import RingLoader from "react-spinners/RingLoader";
 import "./Spinner.css"
 
 const Spinner = () => {
-    let color = "B8E986"
+    let color = "50E3C2"
     return (
         <div className="spinner">
             <RingLoader
